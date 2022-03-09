@@ -11,13 +11,25 @@
         analytics.page();
         }}();
       </script>
+
 </head>
 <body>
     <h1> Narendra Singh Shekhawat</h1>
-    <a href="/shscustomersuccess/contact.html">Contact</a>
+    <a href="/shscustomersuccess/contact.html" onclick="test()">Contact</a>
     <p>There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
     <p>There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
     <p>There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
     <p>There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
+
+    <script>
+        function test() {
+            alert("calling test method !!!");
+            analytics.identify('f4ca124298', {
+                name: 'Michael Brown',
+                email: 'mbrown@example.com'
+              });
+        }
+        
+        </script>
 </body>
 </html>
