@@ -16,6 +16,9 @@
 <body>
     <h1> Narendra Singh Shekhawat</h1>
     <a href="/shscustomersuccess/contact.html" onclick="test()">Contact</a>
+    
+    <a href="/shscustomersuccess/contact.html" onclick="test1()">Contact</a>
+    
     <p>There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
     <p>There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
     <p>There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
@@ -24,12 +27,25 @@
     <script>
         function test() {
             alert("calling test method !!!");
-            analytics.identify('f4ca124298', {
-                name: 'Michael Brown',
-                email: 'mbrown@example.com'
-              });
+//             analytics.identify('f4ca124298', {
+//                 name: 'Michael Brown',
+//                 email: 'mbrown@example.com'
+//               });
+            analytics.group("0e8c78ea9d97a7b8185e8632", {
+              name: "Initech",
+              industry: "Technology",
+              employees: 329,
+              plan: "enterprise",
+              "total billed": 830
+            });
         }
-        
+        function test1() {
+            alert("calling test1 method !!!");
+            analytics.track("User Registered", {
+              plan: "Pro Annual",
+              accountType: "Facebook"
+            });
+        }
         </script>
 </body>
 </html>
